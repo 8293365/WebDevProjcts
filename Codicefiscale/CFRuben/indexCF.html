@@ -1,0 +1,91 @@
+<!DOCTYPEhtml>
+<hmtl lang="en"><!--the (lang="en") specifies the lenguage of the page, it helps the browser in its search-->
+    <head>
+        <title>
+            Fiscal Code Calculator
+        </title>
+        <script>
+            const months = ["A","B","C","D","E","H","L","M","P","R","S","T"];
+            const vowels = ['A','E','I','O','U'];
+            const alphabot = ['B','C','D','F','G','H','J','K','L','M','N','P',
+            'Q','R','S','T','V','W','X','Y','Z','A','E','I','O','U'];
+        var surname = document.getElementById(surname);
+        var name = document.getElementById(name);
+        var birthPlace = document.getElementById(birthPlace);
+        var sex = 1
+        function sexOutput(MissingData){
+            let result ="";
+            if(lol){
+                
+            }
+            return result
+        }
+        function Gateway(birthDateRec){
+            let result = "";
+            result += document.getElementById(birthDate).innerHTML;    
+            return document.getElementById("FinalOutput").innerHTML = result
+        }
+        function outputFinale(){// the "calculate" button click directly activates this function
+            let result = "";
+            if (Codecalculator().length===16)// yo bro check your "length" spelling once in a while 
+            result = CodeCalculator(); //remember the "TH" particle doesn't change order be it "THIEVE" or "lengTH"
+            else
+            result = "The form hasn't been compiled correctly, please check that every area is edited";
+            return result
+        }
+        
+        function Poop(){
+            return document.getElementById("FinalOutput").innerHTML= "12345";
+        }
+    
+        </script>
+    
+    </head>
+    
+    <body>
+        <noscript>Sorry, your browser does not support the JavaScript.</noscript>
+        <h1>
+            Fiscal Code Calculator
+        </h1>
+        <br><br>
+        <form>
+        <label class="labl">Surname:</label>
+        <forms>
+        <input Id="surname" class="name"></input>
+        </forms>
+        <br><br>
+    
+        <label class="labl">Name:</label>
+        <forms action="">
+        <input Id="name" class="name"></input>
+        </forms>
+        <br><br>
+       
+        <label class="labl">BirthDate:</label>
+        <input Id="birthDate" type="date">
+        <br><br>
+       
+        <label class="labl">BirthPlace:</label>
+        <forms>
+        <input Id="birthPlace" class="birthPlace"></input>
+        </forms>
+        <br><br>
+       
+        <label Id="MsexLabel" class="labl" >Male:</label>   <!--interesting to note that labels do stay on the same line as elements indipendently if they belong to them or not-->
+        <input type="radio" Id="maleButton" name="switcher" >           <!-- also the label writes on the left of the line element-->
+        <br><!--beware switchers without the same name will not work together-->
+        <label Id="FsexLabel" class="labl">Female:</label>
+        <input type="radio" Id="femaleButton" name="switcher" onclick="">
+       
+        <br><br><br>            <!--Must check, "onclick" or "submit"? Check carefully!!-->
+        <input Id="calculate" type="button" onclick="Gateway()" value="Calculate" ></input>             <!--(value = "calculate") writes the text inside the button -->
+        <input type="reset">Clear Page</input>
+        <br><!--remember the submit is the type that delivers data to submit FORMS to data handlers-->
+        <br>
+        <br>
+        <p Id="FinalOutput"></p>
+        
+        </form>
+        
+    </body>
+</hmtl><!--ACHTUNG ATTENZIONE IN UN DOCUMENTO HTML ALL'INTERNO DI <script> E' L'AMBASCIATA DI JAVASCRIPT no html admitted-->
