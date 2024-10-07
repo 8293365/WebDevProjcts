@@ -1,0 +1,123 @@
+<!--to create a file always use touch-->
+<!--what does all of this have to do with a <div><div/>
+    tag span-style
+    tag em->emphasize used by automatic readers
+
+    
+
+    -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>MODULO di Richiesta Viaggio d'Istruzione</title><!--it is seen in the title of the page of the browser-->
+
+</head>
+<!--use specific tags: header, footer,... not just random divs-->
+<body>
+ <div class="topnav">
+  <a href="#Itisrossi" type="button" onclick="window.locaton.href='https://www.itisrossi.edu.it/';">ItisRossi</a>
+  <a href="#Modulo2">Modulo2</a>
+  <a href="#Modulo3">Modulo3</a>
+</div> 
+<h1>MODULO di Richiesta Viaggio d'Istruzione</h1>
+<form action="newfile.php" method="GET"><!--it has come out inverted-->
+    <label>Docente:</label><br>
+    <input type="text" id='name' name="name" value="John"><br>
+    <br>
+    <label for="PNum">Numero Partecipanti:</label><br>
+    <input type="number" id="PNum" name="PNum" value="10"><br>
+    <br>
+    <table>
+      <thead>
+        <tr>          
+          <th>Surname</th>
+          <th>Name</th>
+        </tr>
+        </thead>        
+        <br>
+        <tbody></tbody>
+        <tr>
+          <td>Emile</td>
+          <td>Bidan</td>
+        </tr>
+        <tr>
+          <td>Tobias</td>
+          <td>Raikonnen</td>
+        </tr>
+        <tr>
+          <td>Linus</td>
+          <td>Torvalds</td>
+        </tr>
+      </tbody>
+
+      </table> 
+    <br>
+    <label for="DateT">Data ed ora Partenza:</label>
+    <input type="datetime" id="DateT" name="DateT" value="2004-10-05"> 
+    <br><br>
+    <label for="Cities">Scegli una Città:</label>
+    <br>
+    <select name="Cities" id="Cities">
+      <option name="Cities" id ="Barcelona" value="Barcellona" >Barcellona</option>
+      <option name="Cities" id="Praga" value="Praga" Checked>Praga</option>
+      <option name="Cities" id="Berlino" value="Berlino">Berlino</option>
+      <option name="Cities" id="Paris" value="Parigi">Parigi</option>
+    </select> 
+    <br><br>
+    
+    <button type="button" onclick="window.location.href='https://en.wikipedia.org/wiki/Barcelona';">
+    <img alt="barcelona" type="image"src='https://en.wikipedia.org/wiki/Barcelona#/media/File:Aerial_view_of_Barcelona,_Spain_(51227309370)_(cropped).jpg'
+    width= "100%" height="200"/>
+    </button>
+    <button type="button" onclick="window.location.href='https://en.wikipedia.org/wiki/Prague';">
+    <img alt="prague" src='https://en.wikipedia.org/wiki/Prague#/media/File:Prague_(6365119737).jpg'
+     width="100%" height='200'>
+    </button>
+    <button type="button" onclick="window.location.href='https://en.wikipedia.org/wiki/Berlin';">
+    <img alt="berlin" src='https://en.wikipedia.org/wiki/Berlin#/media/File:Museumsinsel_Berlin_Juli_2021_1_(cropped).jpg'
+     width="100%" height='200'>
+    </button>
+    <button type="button" onclick="window.location.href='https://en.wikipedia.org/wiki/Paris';">
+    <img alt="paris" src='https://en.wikipedia.org/wiki/Paris#/media/File:La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_ao%C3%BBt_2014_(2).jpg'
+     width="100%" height='200'>
+    </button>
+      <br><br>
+    <p>Preferenza mezzo:</p>    
+    <input type="checkbox" name="mezzo[]" id="Aereo" value="Aereo" Checked/>
+    <label for="Aereo">Aereo</label><br>
+    <input type="checkbox" name="mezzo[]" id="Treno" value="Treno"/>    
+    <label for="Treno">Treno</label><br>
+    <input type="checkbox" name="mezzo[]" id="Autobus" value="Autobus"/>    
+    <label for="Autobus">Autobus</label><br>
+    <input type="checkbox" name="mezzo[]" id="Crociera" value="Crociera"/>    
+    <label for="Crociera">Crociera</label><br>
+
+    <h2>Paragrafo 2</h2>
+    <br>
+    <p>trattamento:</p>
+    <input type="radio" name ="treatment" id="b&b" value="b&b" checked/>
+    <label for="b&b">b&b</label><br>
+    <input type="radio" name ="treatment"  id="Mezza Pensione" value="Mezza Pensione"/>    
+    <label for="Mezza Pensione">Mezza Pensione</label><br>
+    <input type="radio" name="treatment"  id="Pensione completa" value="Pensione completa"/>    
+    <label for="Pensione Completa">Pensione Completa</label><br>
+    <br><br>
+    <p>Quota Pro capite:</p>
+    <p><input type="number" min="0.01" step="0.01" max="2500" name='PerCapitaCost' id="PerCapitaCost" value="700,40"/>€</p>
+    <p>Email del docente:</p>
+    <input type="email" id="email" name="email" value="8293365@itisrossi.vi.it">
+
+    <p>Note:</p>
+    <textarea rows="8" columns="90" name ="notes"  id="notes">apprezzo l'arte moderna</textarea>
+    <input type="submit">
+  </form>
+ <footer>
+  <p>Autore:Ruben Lazzaretto</p>
+  <p><a href="gitasicura@pizza.com">gitasicura@pizza.com</a></p>
+</footer> 
+<!--ahhhhhhhhh indentation-->
+</body>
+</html>
